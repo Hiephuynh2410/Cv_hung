@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Hung C. Nguyen — Resume Website" />
+  <title>Hung C. Nguyen | Resume</title>
+
+  <script>
+    (function () {
+      const t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <!-- Brand + Avatar -->
+      <div class="brand">
+        <button class="avatar" id="avatarBtn" type="button" aria-label="Change avatar">
+          <img id="avatarImg" src="hung.png" alt="Avatar" />
+          <span class="avatar-ring" aria-hidden="true"></span>
+        </button>
+        <input id="avatarInput" type="file" accept="image/*" hidden />
+
+        <div class="brand-text">
+          <div class="name">Hung C. Nguyen</div>
+          <span class="sub">Nguyễn Công Hùng • Resume Website</span>
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <nav aria-label="Primary navigation" class="nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#references">References</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button class="btn" id="themeBtn" type="button" title="Toggle theme (T)">
+          Theme <span class="kbd">T</span>
+        </button>
+        <button class="btn" id="printBtn" type="button" title="Print / Save as PDF (P)">
+          Print <span class="kbd">P</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero-inner">
+        <div>
+          <h1>Hung C. Nguyen</h1>
+          <p class="muted" style="margin-top:-6px">Nguyễn Công Hùng (Vietnamese)</p>
+
+          <p class="muted" style="margin-top:6px">
+            GitHub:
+            <a href="https://github.com/HungNguyen4864" target="_blank" rel="noopener">HungNguyen4864</a>
+          </p>
+
+          <div class="hero-badges" aria-label="Highlights">
+            <span class="pill">
+              Email:
+              <a id="emailLink" href="mailto:hungcn.ds@gmail.com">
+                <strong id="emailText">hungcn.ds@gmail.com</strong>
+              </a>
+            </span>
+            <span class="pill">English: intermediate (reading / writing / speaking)</span>
+          </div>
+
+          <div class="contact-row">
+            <a class="btn primary" href="mailto:hungcn.ds@gmail.com">Email me</a>
+
+            <!-- GIỮ NGUYÊN NÚT CV (đúng link bạn yêu cầu) -->
+            <a class="btn" href="https://drive.google.com/file/d/1WQfqi3vcuQ3gXv2DkUk7Le7ndus39gCx/view" target="_blank" rel="noopener">Here's my CV</a>
+          </div>
+
+          <div class="small muted" id="toast" style="display:none;margin-top:8px"></div>
+        </div>
+
+        <div class="hero-right">
+          <button class="hero-avatar" id="heroAvatarBtn" type="button" aria-label="Change avatar">
+            <span class="hero-avatar-ring" aria-hidden="true"></span>
+            <img id="heroAvatarImg" src="hung.png" alt="Avatar" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYOUT -->
+    <div class="layout">
+      <!-- MAIN -->
+      <div class="main">
+        <section class="card" id="education">
+          <h2>Education</h2>
+          <div class="timeline">
+            <div class="titem">
+              <div class="when">2025–Present</div>
+              <div>
+                <h3>M.Sc. in Information Technology</h3>
+                <div class="meta">Faculty of Information Technology</div>
+                <div class="meta">Ho Chi Minh City University of Technology (HUTECH), Vietnam</div>
+              </div>
+            </div>
+
+            <div class="titem">
+              <div class="when">2021–2025</div>
+              <div>
+                <h3>B.Sc. in Data Science</h3>
+                <div class="meta">Faculty of Information Technology</div>
+                <div class="meta">Ho Chi Minh City University of Technology (HUTECH), Vietnam</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="publications">
+          <h2>Publications</h2>
+
+          <ol class="publist" id="pubList">
+            <li class="pub-card" data-text="2025 efficient multi-class classification granular ball twin support vector machine decomposition strategies journal of computer science and cybernetics">
+              <div class="pub-head">
+                <span class="pub-year">2025</span>
+                <span class="pub-title">
+                  Efficient multi-class classification with granular ball twin support vector machine using novel decomposition strategies.
+                </span>
+              </div>
+              <div class="pub-venue">Journal of Computer Science and Cybernetics.</div>
+              <div class="pub-auth muted small">Nguyen, H. C.; Huynh, H.; Bui, Q.-T.</div>
+            </li>
+
+            <li class="pub-card" data-text="2025 reliability-enhanced neighborhood-aware possibilistic semi-supervised fuzzy clustering kse 2025 doi 10.1109/KSE68178.2025.11309606">
+              <div class="pub-head">
+                <span class="pub-year">2025</span>
+                <span class="pub-title">
+                  A reliability-enhanced approach for neighborhood-aware possibilistic semi-supervised fuzzy clustering.
+                </span>
+              </div>
+              <div class="pub-venue">2025 17th International Conference on Knowledge and System Engineering (KSE), 1–6.</div>
+              <div class="pub-auth muted small">Huynh, H.; Nguyen, H. C.; Bui, Q.-T.</div>
+              <div class="pub-venue">
+                DOI:
+                <a href="https://doi.org/10.1109/KSE68178.2025.11309606" target="_blank" rel="noopener">10.1109/KSE68178.2025.11309606</a>
+              </div>
+            </li>
+
+            <li class="pub-card" data-text="2025 enhanced medical image generation advanced latent space diffusion materials and emerging technologies for sustainability 01 01 2550003 doi 10.1142/S3060932125500037">
+              <div class="pub-head">
+                <span class="pub-year">2025</span>
+                <span class="pub-title">
+                  Enhanced medical image generation through advanced latent space diffusion.
+                </span>
+              </div>
+              <div class="pub-venue">Materials and Emerging Technologies for Sustainability, 01(01), 2550003.</div>
+              <div class="pub-auth muted small">
+                Nguyen, K. M.; Nguyen, H. C.; Huy Nguyen, H.; Nguyen, T.-B.; Nguyen, P.-T.; Tran, V.; Pham, P.; Bui, Q.-T.
+              </div>
+              <div class="pub-venue">
+                DOI:
+                <a href="https://doi.org/10.1142/S3060932125500037" target="_blank" rel="noopener">10.1142/S3060932125500037</a>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <section class="card" id="skills">
+          <h2>Skills</h2>
+
+          <div class="skill-group">
+            <div>
+              <div class="muted small" style="margin-bottom:6px">Languages</div>
+              <div class="skill-row">
+                <span class="tag">English</span>
+                <span class="tag muted">Intermediate (reading, writing, speaking)</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="muted small" style="margin-bottom:6px">Coding</div>
+              <div class="skill-row">
+                <span class="tag">Python</span>
+                <span class="tag">R</span>
+                <span class="tag">Java</span>
+                <span class="tag">MATLAB</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="muted small" style="margin-bottom:6px">Databases</div>
+              <div class="skill-row">
+                <span class="tag">Microsoft Access</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="muted small" style="margin-bottom:6px">Statistics</div>
+              <div class="skill-row">
+                <span class="tag">Microsoft Excel</span>
+                <span class="tag">PowerPoint</span>
+                <span class="tag">Word</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="muted small" style="margin-bottom:6px">Miscellaneous</div>
+              <div class="skill-row">
+                <span class="tag">Academic research</span>
+                <span class="tag">Teaching</span>
+                <span class="tag">Training</span>
+                <span class="tag">Consultation</span>
+                <span class="tag">LaTeX typesetting</span>
+                <span class="tag">Publishing</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="certifications">
+          <h2>Certifications</h2>
+          <div class="timeline">
+            <div class="titem" style="grid-template-columns: 90px 1fr">
+              <div class="when">2025</div>
+              <div>
+                <h3 style="margin:0;font-size:14px">VSTEP B2 — Vietnamese Standardized Test of English Proficiency</h3>
+                <div class="meta">Van Lang University, Vietnam</div>
+              </div>
+            </div>
+
+            <div class="titem" style="grid-template-columns: 90px 1fr">
+              <div class="when">2025</div>
+              <div>
+                <h3 style="margin:0;font-size:14px">Professional Pedagogical Certificate</h3>
+                <div class="meta">Grade: Excellent — Ho Chi Minh City University of Technology (HUTECH), Vietnam</div>
+              </div>
+            </div>
+
+            <div class="titem" style="grid-template-columns: 90px 1fr">
+              <div class="when">2024</div>
+              <div>
+                <h3 style="margin:0;font-size:14px">Python for Data Science</h3>
+                <div class="meta">CognitiveClass</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="references">
+          <h2>References</h2>
+          <div class="titem" style="grid-template-columns: 1fr; gap:8px">
+            <div>
+              <h3 style="margin:0;font-size:14px">Dr. Quang-Thinh Bui</h3>
+              <div class="meta">Faculty of Education and Basic Sciences</div>
+              <div class="meta">Tien Giang University</div>
+              <div class="meta">119 Ap Bac, Ward 5, My Tho City, Dong Thap Province, Vietnam</div>
+              <div style="margin-top:8px">
+                <a class="btn" href="mailto:buiquangthinh@tgu.edu.vn">buiquangthinh@tgu.edu.vn</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Hung C. Nguyen — Resume Website.
+    </footer>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
